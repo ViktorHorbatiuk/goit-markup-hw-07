@@ -17,19 +17,25 @@ body {
   --gray: #757575;
   --light-gray: rgba(255, 255, 255, 0.6);
   --comment-color: rgba(117, 117, 117, 0.5);
-  --background-LightGray: #f5f4fa;
-  --background-TransparentBlack: rgba(47, 48, 58, 0.8);
-  --background-overlay: rgba(33, 150, 243, 0.9);
-  --background-footer: #2f303a;
-  --background-foter-icon: rgba(255, 255, 255, 0.1);
-  --box-shadow-1: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  --box-shadow-2: 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  --box-shadow-overlay: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  --box-shadow-category: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  --bg-LightGray: #f5f4fa;
+  --bg-TransparentBlack: rgba(47, 48, 58, 0.8);
+  --bg-overlay: rgba(33, 150, 243, 0.9);
+  --bg-footer: #2f303a;
+  --bg-foter-icon: rgba(255, 255, 255, 0.1);
+  --shadows-1: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --shadows-2: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --shadows-overlay: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --shadows-category: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  --box-shadow-ButtoDesign: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  --shadows-ButtonDesign: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --header-border: #ececec;
+  --category-border: #eeeeee;
+  --foter-input-border: rgba(255, 255, 255, 0.3);
+  --close-btn-border: rgba(0, 0, 0, 0.1);
+  --modal-border: rgba(33, 33, 33, 0.2);
+  --fill-gray: #afb1b8;
 }
 
 :hover,
@@ -63,7 +69,7 @@ li {
 
 .header {
   width: 1600px;
-  border: 1px solid #ececec;
+  border: 1px solid var(--header-border);
 }
 
 .container {
@@ -183,7 +189,7 @@ header .container {
   cursor: pointer;
   background: var(--blue);
   border-color: var(--blue);
-  box-shadow: var(--box-shadow-1);
+  box-shadow: var(--shadows-1);
   border-radius: 4px;
   margin-left: 700px;
   margin-bottom: 200px;
@@ -215,7 +221,7 @@ header .container {
 .list-container {
   width: 270px;
   height: 120px;
-  background: var(--background-LightGray);
+  background: var(--bg-LightGray);
   border-radius: 4px;
 }
 
@@ -278,7 +284,7 @@ header .container {
   position: absolute;
   width: 370px;
   height: 70px;
-  background: var(--background-TransparentBlack);
+  background: var(--bg-TransparentBlack);
   display: block;
   top: 1498px;
 }
@@ -299,7 +305,7 @@ header .container {
 .backround-section {
   width: 1600px;
   height: 648px;
-  background: var(--background-LightGray);
+  background: var(--bg-LightGray);
   padding-bottom: 94px;
 }
 
@@ -318,7 +324,7 @@ header .container {
   width: 270px;
   height: 428px;
   background: var(--white);
-  box-shadow: var(--box-shadow-2);
+  box-shadow: var(--shadows-2);
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 94px;
 }
@@ -355,7 +361,7 @@ header .container {
 }
 
 .logotype {
-  fill: #afb1b8;
+  fill: var(--fill-gray);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -390,8 +396,8 @@ header .container {
 .customers-list {
   width: 170px;
   height: 92px;
-  fill: #afb1b8;
-  border: 1px solid #afb1b8;
+  fill: var(--fill-gray);
+  border: 1px solid var(--fill-gray);
   border-radius: 4px;
 }
 
@@ -422,7 +428,7 @@ header .container {
 
 .button-design {
   height: 38px;
-  background: var(--background-LightGray);
+  background: var(--bg-LightGray);
   border-radius: 4px;
   border: 0;
   font-weight: 500;
@@ -474,7 +480,7 @@ header .container {
 
 .category-wrapper {
   box-sizing: border-box;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--category-border);
   width: 370px;
   height: 404px;
 }
@@ -493,7 +499,7 @@ header .container {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--background-overlay);
+  background: var(--bg-overlay);
   box-shadow: var(--box-shadow-overlay);
   transform: translateY(101%);
   transition: transform 250ms;
@@ -517,7 +523,7 @@ header .container {
 
 .category-wrapper:hover {
   cursor: pointer;
-  box-shadow: var(--box-shadow-category);
+  box-shadow: var(--shadows-category);
 }
 
 .category-list:nth-child(3n) {
@@ -526,7 +532,7 @@ header .container {
 
 .button-design:hover {
   background: var(--blue);
-  box-shadow: var(--box-shadow-ButtoDesign);
+  box-shadow: var(--shadows-ButtonDesign);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -588,7 +594,7 @@ header .container {
 /* =====FOOTER===== */
 
 .footer {
-  background: var(--background-footer);
+  background: var(--bg-footer);
   display: flex;
 }
 
@@ -654,14 +660,14 @@ header .container {
 }
 
 .footer-logo {
-  fill: #afb1b8;
+  fill: var(--fill-gray);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: var(--background-foter-icon);
+  background: var(--bg-foter-icon);
 }
 
 .footer-logo:hover {
@@ -691,7 +697,7 @@ header .container {
   width: 200px;
   height: 50px;
   background: var(--blue);
-  box-shadow: var(--box-shadow-1);
+  box-shadow: var(--shadows-1);
   margin-top: 36px;
   cursor: pointer;
   display: flex;
@@ -706,7 +712,7 @@ header .container {
   height: 50px;
   margin-top: 20px;
   margin-right: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--foter-input-border);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: inherit;
@@ -753,7 +759,7 @@ header .container {
   width: 30px;
   height: 30px;
   background: var(--white);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--close-btn-border);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -772,7 +778,7 @@ header .container {
   width: 528px;
   min-height: 581px;
   background: var(--white);
-  box-shadow: var(--box-shadow-2);
+  box-shadow: var(--shadows-2);
   border-radius: 4px;
 }
 
@@ -838,7 +844,7 @@ header .container {
   width: 448px;
   height: 40px;
   padding-left: 42px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--modal-border);
   border-radius: 4px;
   outline: none;
 }
@@ -880,7 +886,7 @@ header .container {
   box-sizing: border-box;
   width: 448px;
   height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--modal-border);
   border-radius: 4px;
   padding: 12px 16px;
   font-family: var(--font-main);
@@ -951,7 +957,7 @@ header .container {
   justify-content: center;
   align-items: center;
   background: var(--blue);
-  box-shadow: var(--box-shadow-1);
+  box-shadow: var(--shadows-1);
   border-radius: 4px;
   border-color: var(--blue);
   cursor: pointer;
