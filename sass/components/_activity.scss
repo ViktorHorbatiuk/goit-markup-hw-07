@@ -1,0 +1,27 @@
+.middle-title--activity {
+  padding: 94px 409px 50px 409px;
+}
+.activity {
+  width: 370px;
+  height: 294px;
+  background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
+  mix-blend-mode: normal;
+
+  &:not(:last-child) {
+  margin-right: 30px;
+}
+  
+}
+.label {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  background: var(--bg-TransparentBlack);
+  display: block;
+  top: 1498px;
+}
+.small-title--label {
+  color: var(--white);
+  margin-top: 27px;
+  text-align: center;
+}

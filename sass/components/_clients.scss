@@ -1,0 +1,31 @@
+
+.middle-title--clients {
+  padding-bottom: 50px;
+  margin: 0px;
+}
+.clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients__card {
+  width: 170px;
+  height: 92px;
+  fill: var(--fill-gray);
+  border: 1px solid var(--fill-gray);
+  border-radius: 4px;
+
+  &:not(:last-child) {
+  margin-right: 30px;
+}
+}
+.clients__card:hover,
+.clients__card:focus {
+  cursor: pointer;
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  fill: var(--blue);
+}
+.clients__card svg {
+  margin: 17.71px 32px 14.25px 32px;
+}

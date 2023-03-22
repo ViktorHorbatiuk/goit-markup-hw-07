@@ -1,0 +1,43 @@
+.segment {
+  width: 270px;
+  height: 120px;
+
+  &:not(:last-child) {
+  margin-right: 30px;
+  }
+
+}
+
+.segment__container {
+  width: 270px;
+  height: 120px;
+  background: var(--bg-LightGray);
+  border-radius: 4px;
+
+  & svg:hover,
+  & svg:focus {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+}
+.segment__container svg {
+  padding: 25px 100px;
+}
+.small-title--lorem {
+  width: 270px;
+  height: 16px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+.small-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+.small-text--lorem {
+  width: 270px;
+  height: 75px;
+  color: var(--gray);
+}
